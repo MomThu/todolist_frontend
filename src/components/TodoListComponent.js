@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => ({
 function TodoList(props) {
     const [deleteList, setDeleteList] = React.useState([]);
     const [hideBulk, setHideBulk] = React.useState(0);
-    const [search, setSearch] = React.useState([]);
+    const [search, setSearch] = React.useState("");
 
     // Fetch data of all tasks
     React.useEffect(() => {
