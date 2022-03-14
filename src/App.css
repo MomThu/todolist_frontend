@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.new-task {
+    width: 40vw;
+    border: solid black 1px;
+    padding-left: 1vw;
+    padding-bottom: 2vw;
+}
+.title {
+    text-align: center;
+}
+.todolist {
+    width: 55vw;
+    border: solid black 1px;
+    padding: 0vw 1vw 2vw 1vw;
+
+}
+.content {
+    width: 80%;
+    margin-left: 10%;
+}
+#search {
+    width: 99%;
+    align-items: center;
+    margin: 0;
+}
+.form-container > div {
+    margin: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+    font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-title > label {
+    font-weight: normal;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-title {
+    display: flex;
+    margin-top: 5%;
+    border: solid black 1px;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 50px;
+    align-items: center;
 }
+.task-info {
+    border: solid black 1px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-remove {
+    margin-left: auto;
+    margin-right: 0;
+}
+.button-detail {
+    background-color: #00BCD4;
+    width: 5vw;
+    height: 2vw;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
+.button-remove {
+    background-color: #D9534F;
+    width: 5vw;
+    height: 2vw;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
+.form-split {
+    display: flex;
+    
+}
+label > select {
+    width: 75%;
+}
+label > input {
+    width: 100%;
+}
+.form-component {
+    width: 80%;
+    margin-left: 10%;
+}
+input, select {
+    height: 30px;
+}
+textarea {
+    height: 100px;
+}
+.bulk {
+    display: flex;
+    border: solid black 1px;
+    height: 70px;
+    margin-top: 50px;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: #E0E0E0;
+}
+.tick-done {
+    margin-left: auto;
+    margin-right: 0;
+}
+.submit {
+    background-color: #5CB85C;
+    color: white;
+    border: none;
+}
+.button-remove-ticked {
+    background-color: #D9534F;
+    width: 7vw;
+    height: 3vw;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
+.button-done-ticked {
+    background-color: #2196F3;
+    width: 7vw;
+    height: 3vw;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 10%;
 }
